@@ -14,3 +14,18 @@ b = b+a # 200- 190 = 10
 a = b-a # 10 - (-190) = 200
 
 print(f'A : {a}, B : {b}')
+
+# using bitwise manipultion : XOR
+print("\n using bitwise manipulation method")
+a,b = int(input("ENTER A: ")), int(input("ENTER B: "))
+
+
+# returns 1 if bits are different
+# a= 5, b = 2: 101^10 = 111(7)
+
+
+a = a^b  
+b = a^b  # 111^10= 101(5)
+a = a^b  # 111^101 = 010(2)
+
+print(f'A : {a}, B : {b}')
