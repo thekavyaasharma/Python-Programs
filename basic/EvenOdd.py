@@ -13,9 +13,16 @@ print("Using ternary operations")
 print("EVEN" if a % 2 == 0 else "ODD")
 
 # using bitwise operations 
-print("Using bitwise manipulation")
+print("Using bitwise manipulation &")
 if a & 1:
     print(a, "is odd")
 else:
     print(a, " is even")
+
+print("Using bitwise manipulation right shift")
+if a >> 1 == 1:
+    print(a, "is odd")
+else:
+    print(a, " is even")
+
 
