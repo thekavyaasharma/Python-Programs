@@ -23,4 +23,15 @@ n = str(num)
 n = n[::-1]
 print(f"The reverse number is {n}")
 
-# using recursion 
+# reverse number upto 32 bits else return 0 : leetcode
+
+s = str(abs(x))
+rev = int(s[::-1])
+
+res = rev if x > 0 else -rev
+
+if res < -2**31 or res > 2**31 -1:
+    print(0)
+else:
+    print(res)
+
