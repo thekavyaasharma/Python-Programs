@@ -24,6 +24,7 @@ n = n[::-1]
 print(f"The reverse number is {n}")
 
 # reverse number upto 32 bits else return 0 : leetcode
+x = int(input("ENTER A NUMBER TO REVERSE: "))
 
 s = str(abs(x))
 rev = int(s[::-1])
