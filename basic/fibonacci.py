@@ -1,4 +1,4 @@
-# finonacci : 0,1,1,2,3,5,8,13,21,34
+# finonacci series : 0,1,1,2,3,5,8,13,21,34
 
 n = int(input("Enter a number: "))
 
@@ -54,6 +54,7 @@ def fib_rec(n):
 
 res = fib_rec(n)
 print("Using rescursion: ", res)
+
 
 
 
