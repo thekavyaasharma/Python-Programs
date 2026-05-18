@@ -84,3 +84,55 @@ Explanation:
 Reading stops at the first non-digit character 'w'.
 
  '''
+
+def stoi(st):
+    if len(st) == 0 or st == None:
+        return 0 
+
+    n = len(st)
+    i = 0
+
+    #ignoring whitespaces
+    while(i < n and st[i] == " "):
+        i+=1
+
+    if (i == n):
+        return 0
+
+    #signedness
+    sign = 1
+    if st[i] == "+":
+        i+=1
+    elif st[i] =='-':
+        sign = -1
+        i +=1
+    
+    # conversion 
+    result = 0
+
+    while(i < n and st[i].isdigit()):
+        result = result * 10 + int(st[i])
+
+        if(result <= -2**31):
+            return -2**31
+        
+        elif(result >= 2**31 -1):
+            return 2**31-1
+        
+        i+=1
+    
+    return sign * result 
+
+# test cases 
+a = stoi("0-1") # 0
+print(a, type(a))
+
+
+b = stoi("1337c0d3") # 1337
+print(b, type(b))
+
+c= stoi("  -18") # 18
+print(c, type(c))
+
+d = stoi(" a1b2c3") # 0
+print(d,type(d))
