@@ -44,3 +44,40 @@ s contains only the characters ('I', 'V', 'X', 'L', 'C', 'D', 'M').
 It is guaranteed that s is a valid roman numeral in the range [1, 3999].
  
 '''
+
+def rom_to_int(s):
+    if not s :
+        return 0
+    result = 0
+    d = {
+        'I':1,
+        'V':5,
+        'X':10,
+        'L':50,
+        'C':100,
+        'D':500,
+        'M':1000
+    }
+
+    #"MCMXCIV"
+    for i in range(len(s)-1):
+            if d[s[i]] < d[s[i+1]]:
+                result -= d[s[i]]
+            else:
+                result +=d[s[i]]
+
+    return result + d[s[-1]]
+
+print(rom_to_int('IV')) # 4
+
+print(rom_to_int("")) # 0
+
+print(rom_to_int("MCMXCIV")) # 1994
+
+print(rom_to_int("LVIII")) # 58
+
+print(rom_to_int("XVIII")) # 18
+
+print(rom_to_int("XL")) # 40
+
+print(rom_to_int("XC")) # 90
