@@ -1,4 +1,5 @@
-# prime numer : 2,3,5,7,11,13,17 others are composite 
+# prime numbers : 2,3,5,7,11,13,17 others are composite 
+
 # 1 is neither prime nor composite.
 # A natural number n > 1 : is prime if its only divisors are 1 and n.
 # 2 is the smallest prime number and the only even prime number.
