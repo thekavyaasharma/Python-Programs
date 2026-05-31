@@ -1,3 +1,4 @@
+# Easy - 2553
 # array = [11,12,13] -> [1,1,1,2,1,3]
 
 def separate_digits(nums):
