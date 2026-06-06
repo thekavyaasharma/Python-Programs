@@ -16,9 +16,9 @@ class Solution:
                     if j < col -1 and grid[i][j+1] == 1:
                         neighbours += 1
         return islandCount * 4 - neighbours *2  
+    
 
-
-
+# solution 2    
 class Solution:
     def islandPerimeter(self, grid: list[list[int]]) -> int:
         row = len(grid)
@@ -42,3 +42,6 @@ class Solution:
                     if j == col -1 or grid[i][j+1] == 0:
                         perimeter +=1
         return perimeter 
+
+
+
