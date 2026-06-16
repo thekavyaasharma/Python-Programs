@@ -14,4 +14,4 @@ class Solution:
                 result.pop()
 
         
-        return "".join(result
+        return "".join(result)
