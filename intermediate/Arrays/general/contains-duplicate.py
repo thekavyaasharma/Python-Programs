@@ -1,5 +1,6 @@
 # 217 - Contains Duplicates - Easy
 class Solution:
+    
     def containsDuplicate(self, nums: List[int]) -> bool:
         nums.sort()
         n = len(nums)
