@@ -1,37 +1,15 @@
-'''
-     *
-    * *
-   *   *
-  *     *
- * * * * * 
-
-'''
-
-n = 5
-for i in range(1,n+1):
-    for j in range(0,i*2):
-        print(" ", end = "")
-        for k in range(0,i*2-1):
-            print("*", end = "")
+n = int(input("Enter number of rows: "))
+cnt = 0
+for i in range(n):
+    x = n-1-i
+    print(" " * x, end ="")
+    print("*", end="")
+    if 0 <i<n-1:
+        sp = cnt + i
+        print(" " * sp, end="")
+        print("*")
+        cnt+=1
+    elif i == n - 1:
+        print("*"* (i*2) )
+    else:
         print()
-
-
-
-'''
-
-    *
-   * *
-  * * *
- * * * *
-* * * * *
-
-'''
-n = 5
-for i in range(n,-1,-1):
-    print(" " * i, end = "")
-    for j in range(n-i):
-        print("*", end = " ")
-
-    print()
-
-
