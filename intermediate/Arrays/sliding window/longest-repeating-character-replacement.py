@@ -6,6 +6,7 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        
         d = dict()
         i = 0
         res = 0
