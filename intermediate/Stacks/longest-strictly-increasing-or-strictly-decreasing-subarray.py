@@ -1,4 +1,5 @@
 # 3105. Longest Strictly Increasing or Strictly Decreasing Subarray - Easy
+
 class Solution(object):
     def longestMonotonicSubarray(self, nums):
         """
